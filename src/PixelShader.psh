@@ -1,0 +1,50 @@
+
+cbuffer CB1 : register(b0)
+{
+    float4 color[16];
+};
+
+cbuffer CB2 : register(b1)
+{
+	uint   width;
+	uint   height;
+};
+
+
+
+struct CABufType
+{
+    uint state;
+};
+
+StructuredBuffer<CABufType> gBuf: register( t0 );
+
+
+//--------------------------------------------------------------------------------------
+// CAPS
+// main entry point
+//--------------------------------------------------------------------------------------
+float4 CAPS( float4 Pos : SV_POSITION ) : SV_Target
+{
+    // calculate the buffer index corresponding to this screen coordinate
+    uint idx = (Pos.x-.5)+(Pos.y-.5)*width;	
+	CABufType state = gBuf[idx];
+	
+    // set the cell color to correspond to the cell's state  
+    return color[state.state];
+
+	//  here only for debug and experimentation with other life rules
+	// left here temporarily for future work
+	//float4 cellColor = float4(0.0f,0.0f,0.0f,0);
+	//if( state.state == 4 || state.state == 12 )
+	//{
+	//	cellColor= color[state.state];
+	//}
+	
+    //return float4(cellColor.r,cellColor.g,cellColor.b,1);
+	
+
+
+
+
+}

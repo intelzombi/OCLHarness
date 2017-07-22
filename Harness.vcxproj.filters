@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\CSVLogger.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HighPerformanceCounter.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\INIFileReader.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OCLHarness.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\CSVLogger.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GlobalDecl.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HighPerformanceCounter.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\INIFileReader.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OCLHarness.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\resource\Resource.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\resource\targetver.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="src\resource\OCLHarness.ico">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="src\resource\small.ico">
+      <Filter>resources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Harness.ini" />
+    <None Include="bin\ScrollTest.ini" />
+    <None Include="src\CellularAutomata.cl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="src\CellularAutomataRootTest.cl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="src\ComputeShader.csh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="src\ComputeShaderRootTest.csh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="src\CSHA.csh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="src\PixelShader.psh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="src\VertexShader.vsh">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{0bc9cbe1-e765-474c-bcf5-56f1fa79b65c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{c62bec66-6765-4477-b66c-f44eb3967168}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{5129e892-f71a-42c5-95b6-c4e89eb1a8bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{36cb449e-b7ba-4ada-a504-943ddbe6c1bf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\resource\OCLHarness.rc">
+      <Filter>resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
